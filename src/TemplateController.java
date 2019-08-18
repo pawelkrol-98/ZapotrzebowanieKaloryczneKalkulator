@@ -29,11 +29,9 @@ public class TemplateController {
     @FXML
     public void obliczZapotrzebowanie() {
 
-        if (textField.getText().isEmpty())
-        {
+        if (textField.getText().isEmpty()) {
             textArea.setText("Podaj swoja wage.");
-        }
-        else {
+        } else {
             waga = Double.parseDouble(textField.getText());
             zapotrzebowanie = waga * 22;
 
@@ -55,11 +53,12 @@ public class TemplateController {
         }
 
     }
-        @FXML
-        private void initialize () {
-            choiceBox.setItems(activityBoxList);
 
-        }
+    @FXML
+    private void initialize() {
+        choiceBox.setItems(activityBoxList);
+
+    }
 
 }
 
